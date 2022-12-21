@@ -1,16 +1,16 @@
 import Head from "next/head";
+import LoginFormContainer from "../components/LoginformContainer";
 import Navbar from "../components/Navbar";
-import WelcomeContainer from "../components/WelcomeContainer";
 
-export default function Index() {
+export default function Login() {
     return (
         <>
             <Head>
-                <title>Resucreator</title>
+                <title>Login</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
-            <Navbar/>
-            <WelcomeContainer/>
+            <Navbar />
+            <LoginFormContainer />
         </>
     )
 }
