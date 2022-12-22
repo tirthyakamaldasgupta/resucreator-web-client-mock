@@ -1,5 +1,7 @@
+import axios from "axios"
+
 export default function RegistrationForm() {
-    function submitRegistrationForm(event: React.FormEvent<HTMLFormElement>) {
+    async function submitRegistrationForm(event: React.FormEvent<HTMLFormElement>) {
         const formElement = event.target as HTMLFormElement
 
         event.preventDefault()
@@ -9,6 +11,26 @@ export default function RegistrationForm() {
         const lastName = (formElement.elements as any).lastNameInput.value
         const email = (formElement.elements as any).emailInput.value
         const password = (formElement.elements as any).passwordInput.value
+
+        const configuration = {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }
+
+        const registrationData = {
+            firstName: firstName,
+            middleName: middleName,
+            lastName: lastName,
+            email: email,
+            password: password,
+        }
+
+        const response = await axios.post("http://localhost:3000/users", registrationData, configuration)
+
+        if (response.status === 201) {
+            window.location.href = "/login"
+        }
     }
 
     return (
