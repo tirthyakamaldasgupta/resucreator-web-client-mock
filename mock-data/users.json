@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "first_name": "Tirthya",
+            "middle_name": "Kamal",
+            "last_name": "Dasgupta",
+            "email": "dasguptatirthyakamal@gmail.com"
+        }
+    ]
+}
