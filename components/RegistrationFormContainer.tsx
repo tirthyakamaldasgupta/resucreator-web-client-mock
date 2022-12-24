@@ -1,11 +1,11 @@
-import RegistrationForm from "./RegistrationForm";
+import Registrationform from "./registrationform";
 
 export default function RegistrationFormContainer() {
     return (
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <RegistrationForm />
+                    <Registrationform />
                 </div>
             </div>
         </div>
