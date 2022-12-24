@@ -12,6 +12,11 @@ export default function Navbar() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <Link className="nav-link active" aria-current="page" href="/pages/logout">Logout</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </nav>
@@ -32,7 +37,7 @@ export default function Navbar() {
                                     <Link className="nav-link active" aria-current="page" href="/register">Register</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link active" aria-current="page" href="login">Login</Link>
+                                    <Link className="nav-link active" aria-current="page" href="/login">Login</Link>
                                 </li>
                             </ul>
                         </div>
