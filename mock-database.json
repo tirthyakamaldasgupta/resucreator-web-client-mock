@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "email": "dasguptatirthyakamal@gmail.com",
+      "password": "$2a$10$DGwDY.NI7E1i0SnfqI.9ve/L3mfEH6I6hMdJjbKY1rIOGHxioofO.",
+      "firstName": "Tirthya",
+      "middleName": "Kamal",
+      "lastName": "Dasgupta",
+      "isAuthenticated": false,
+      "id": 3
+    },
+    {
+      "email": "bobthebuilder@gmail.com",
+      "password": "$2a$10$xUSQj6pxL3ljCRbqMSAdOeH0V2yIGYvh7Edm0yLwYtGW8gVRIDvS2",
+      "firstName": "Bob",
+      "middleName": "The",
+      "lastName": "Builder",
+      "isAuthenticated": false,
+      "id": 4
+    },
+    {
+      "email": "sunil.chhetri@gmail.com",
+      "password": "$2a$10$5KU4x7UQyN0IXuWZ.fVXVuRjydJ5mwVscpwBHeAZ6kqeujfjmXuPa",
+      "firstName": "Sunil",
+      "middleName": "",
+      "lastName": "Chhetry",
+      "isAuthenticated": false,
+      "id": 5
+    },
+    {
+      "email": "lionel.messi@gmail.com",
+      "password": "$2a$10$8r./jQlyNR.sNKQKL.20Zu/5fPBS.MIZcUvoG1EzOPMW9fSnMyupC",
+      "firstName": "Lionel",
+      "middleName": "",
+      "lastName": "Messi",
+      "isAuthenticated": false,
+      "id": 6
+    },
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$42UT5VIc6xRMMxoJl7tLWeuK5QsZFcuC4I8TRFlWYhQKhwJ9Vz08m",
+      "firstName": "A",
+      "middleName": "B",
+      "lastName": "C",
+      "isAuthenticated": false,
+      "id": 7
+    },
+    {
+      "email": "christiano.ronaldo@gmail.com",
+      "password": "$2a$10$6iq0s0qXw7uoqZp4CmOUk..8EiHGEwdEFwj8z8.WW6AOn2lYKgqSO",
+      "firstName": "Christiano",
+      "middleName": "",
+      "lastName": "Ronaldo",
+      "isAuthenticated": false,
+      "id": 8
+    }
+  ],
+  "resumes": [
+    {
+      "userId": 3,
+      "data": {},
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "data": {},
+      "id": 1
+    }
+  ]
+}

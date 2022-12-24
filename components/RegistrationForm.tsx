@@ -1,4 +1,6 @@
-import axios from "axios"
+import axios from "axios";
+import React from "react";
+import { setCookie } from 'cookies-next';
 
 export default function RegistrationForm() {
     async function submitRegistrationForm(event: React.FormEvent<HTMLFormElement>) {
@@ -24,12 +26,20 @@ export default function RegistrationForm() {
             lastName: lastName,
             email: email,
             password: password,
+            isAuthenticated: false
         }
 
-        const response = await axios.post("http://localhost:3000/users", registrationData, configuration)
+        const apiResponse = await axios.post("http://localhost:3000/users", registrationData, configuration)
 
-        if (response.status === 201) {
-            window.location.href = "/login"
+        if (apiResponse.status === 201) {
+            const accessToken = apiResponse.data.accessToken
+
+            setCookie("token", accessToken, {
+                maxAge: 3600,
+                sameSite: "strict"
+            });
+
+            window.location.href = "/home"
         }
     }
 
