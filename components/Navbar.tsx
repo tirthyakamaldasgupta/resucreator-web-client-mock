@@ -2,7 +2,7 @@ import { getCookie } from 'cookies-next';
 import Link from "next/link";
 
 export default function Navbar() {
-    if (getCookie("token")) {
+    if (getCookie("token") && getCookie("userID")) {
         return (
             <>
                 <nav className="navbar navbar-expand-lg bg-light">

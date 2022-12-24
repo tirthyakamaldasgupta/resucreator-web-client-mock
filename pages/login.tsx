@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import { getCookie } from 'cookies-next';
 
 export default function Login() {
-    if (getCookie("token")) {
+    if (getCookie("token") && getCookie("userID")) {
         return (
             <>
                 <Head>

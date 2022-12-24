@@ -33,13 +33,19 @@ export default function RegistrationForm() {
 
         if (apiResponse.status === 201) {
             const accessToken = apiResponse.data.accessToken
+            const userID = apiResponse.data.user.id
 
             setCookie("token", accessToken, {
                 maxAge: 3600,
                 sameSite: "strict"
             });
 
-            window.location.href = "/home"
+            setCookie("userID", accessToken, {
+                maxAge: 3600,
+                sameSite: "strict"
+            });
+
+            window.location.href = "/"
         }
     }
 
