@@ -1,11 +1,11 @@
-import LoginForm from "./loginform";
+import Loginform from "./loginform";
 
-export default function LoginFormContainer() {
+export default function Loginformcontainer() {
     return (
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <LoginForm />
+                    <Loginform />
                 </div>
             </div>
         </div>

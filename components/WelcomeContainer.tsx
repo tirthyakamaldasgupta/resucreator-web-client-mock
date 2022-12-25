@@ -1,4 +1,4 @@
-import WelcomeSection from "./WelcomeSection";
+import WelcomeSection from "./welcomesection";
 
 export default function WelcomeContainer() {
     return (

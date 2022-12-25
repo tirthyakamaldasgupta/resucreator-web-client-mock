@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { setCookie } from 'cookies-next';
 
-export default function RegistrationForm() {
+export default function Registrationform() {
     async function submitRegistrationForm(event: React.FormEvent<HTMLFormElement>) {
         const formElement = event.target as HTMLFormElement
 
@@ -40,7 +40,7 @@ export default function RegistrationForm() {
                 sameSite: "strict"
             });
 
-            setCookie("userID", accessToken, {
+            setCookie("userID", userID, {
                 maxAge: 3600,
                 sameSite: "strict"
             });

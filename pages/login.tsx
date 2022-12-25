@@ -1,5 +1,5 @@
 import Head from "next/head";
-import LoginFormContainer from "../components/loginformcontainer";
+import Loginformcontainer from "../components/loginformcontainer";
 import Navbar from "../components/navbar";
 import { getCookie } from 'cookies-next';
 
@@ -23,7 +23,7 @@ export default function Login() {
                     <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 </Head>
                 <Navbar/>
-                <LoginFormContainer/>
+                <Loginformcontainer/>
             </>
         )
     }
