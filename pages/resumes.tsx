@@ -31,6 +31,15 @@ export default function Resumes() {
         getResumes();
     }, [accessToken, userID]);
 
+    if (!accessToken && !userID) {
+        return (
+            <>
+                <Navbar/>
+                <p>You have to be logged in to view your resumes.</p>
+            </>
+        )
+    }
+
     return (
         <>
             <Navbar/>

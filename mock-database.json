@@ -57,13 +57,6 @@
   ],
   "resumes": [
     {
-      "userId": 3,
-      "data": {
-        "resumeTitle": "Senior Automation Engineer"
-      },
-      "id": 1
-    },
-    {
       "userId": 4,
       "data": {
         "resumeTitle": "Senior Automation Engineer"
