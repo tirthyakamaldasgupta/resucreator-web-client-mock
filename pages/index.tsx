@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import WelcomeContainer from "../components/welcomecontainer";
+import Welcomecontainer from "../components/welcomecontainer";
 
 export default function Index() {
     return (
@@ -10,7 +10,7 @@ export default function Index() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Navbar />
-            <WelcomeContainer />
+            <Welcomecontainer />
         </>
     )
 }

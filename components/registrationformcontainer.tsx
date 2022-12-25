@@ -1,6 +1,6 @@
 import Registrationform from "./registrationform";
 
-export default function RegistrationFormContainer() {
+export default function Registrationformcontainer() {
     return (
         <div className="container">
             <div className="row">
