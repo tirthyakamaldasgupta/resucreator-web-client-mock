@@ -40,7 +40,7 @@ export default function Registrationform() {
                 sameSite: "strict"
             });
 
-            setCookie("userID", accessToken, {
+            setCookie("userID", userID, {
                 maxAge: 3600,
                 sameSite: "strict"
             });

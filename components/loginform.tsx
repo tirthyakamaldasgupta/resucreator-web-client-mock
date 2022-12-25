@@ -35,7 +35,7 @@ export default function Loginform() {
                 sameSite: "strict"
             });
 
-            setCookie("userID", accessToken, {
+            setCookie("userID", userID, {
                 maxAge: 3600,
                 sameSite: "strict"
             });
