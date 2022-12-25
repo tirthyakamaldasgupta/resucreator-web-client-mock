@@ -1,7 +1,6 @@
 import React from 'react';
 import ResumeCard from "../components/resumecard";
 import Router from "next/router";
-import Navbar from "./navbar";
 
 type Props = {
     resumes: Array<{ userId: number; data: { resumeTitle: string }; id: number }>;

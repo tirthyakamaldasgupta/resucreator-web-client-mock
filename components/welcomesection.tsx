@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Welcomesection() {
+export default function WelcomeSection() {
     return (
         <>
             <h1>Welcome to Resucreator</h1>

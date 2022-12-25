@@ -1,11 +1,11 @@
-import Welcomesection from "./welcomesection";
+import WelcomeSection from "./welcomesection";
 
-export default function Welcomecontainer() {
+export default function WelcomeContainer() {
     return (
         <div className="container text-center">
             <div className="row">
                 <div className="col">
-                    <Welcomesection/>
+                    <WelcomeSection/>
                 </div>
             </div>
         </div>

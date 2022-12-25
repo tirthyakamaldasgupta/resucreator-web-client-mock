@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import {setCookie} from "cookies-next";
 
-export default function Loginform() {
+export default function LoginForm() {
     async function submitLoginForm(event: React.FormEvent<HTMLFormElement>) {
         const formElement = event.target as HTMLFormElement
 

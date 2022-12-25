@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { setCookie } from 'cookies-next';
 
-export default function Registrationform() {
+export default function RegistrationForm() {
     async function submitRegistrationForm(event: React.FormEvent<HTMLFormElement>) {
         const formElement = event.target as HTMLFormElement
 
