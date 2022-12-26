@@ -57,17 +57,21 @@
   ],
   "resumes": [
     {
+      "resumeTitle": "Senior Automation Engineer",
+      "firstName": "Bob",
+      "middleName": "The",
+      "lastName": "Buiilder",
+      "profileSummary": "Buiilder",
       "userId": 4,
-      "data": {
-        "resumeTitle": "Senior Automation Engineer"
-      },
       "id": 1
     },
     {
-      "userId": 4,
-      "data": {
-        "resumeTitle": "Junior Automation Engineer"
-      },
+      "resumeTitle": "Senior DBA",
+      "firstName": "Bob",
+      "middleName": "The",
+      "lastName": "Builder",
+      "profileSummary": "Builder",
+      "userId": "4",
       "id": 2
     }
   ]
