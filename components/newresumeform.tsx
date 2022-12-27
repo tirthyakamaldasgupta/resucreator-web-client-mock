@@ -17,7 +17,7 @@ export default function NewResumeForm(props: Props) {
         const firstName = (formElement.elements as any).firstName.value
         const middleName = (formElement.elements as any).middleName.value
         const lastName = (formElement.elements as any).lastName.value
-        const profileSummary = (formElement.elements as any).lastName.value
+        const profileSummary = (formElement.elements as any).profileSummary.value
 
         const configuration = {
             headers: {

@@ -5,7 +5,7 @@ import ResumeCardContainer from "../components/resumecardcontainer";
 import Navbar from "../components/navbar";
 
 export default function Resumes() {
-    const [resumes, setResumes] = useState<Array<{ userId: number; resumeTitle: string; id: number }>>([]);
+    const [resumes, setResumes] = useState<Array<{ userId: number; resumeTitle: string; firstName: string; middleName: string; lastName: string; profileSummary: string; id: number }>>([]);
 
     async function fetchResumes(accessToken: string | undefined | null | boolean, userID: string | boolean | null | undefined) {
         const configuration = {

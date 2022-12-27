@@ -3,7 +3,7 @@ import ResumeCard from "../components/resumecard";
 import Router from "next/router";
 
 type Props = {
-    resumes: Array<{ userId: number; resumeTitle: string; id: number }>;
+    resumes: Array<{ userId: number; resumeTitle: string; firstName: string; middleName: string; lastName: string; profileSummary: string; id: number }>;
 };
 
 function ResumeCardContainer(props: Props) {
@@ -31,7 +31,7 @@ function ResumeCardContainer(props: Props) {
 
                 {resumes.map((resume) => (
                     <div className="col-md-4" key={resume.id}>
-                        <ResumeCard id={resume.id} userId={resume.userId} resumeTitle={resume.resumeTitle} />
+                        <ResumeCard id={resume.id} userId={resume.userId} resumeTitle={resume.resumeTitle}  />
                     </div>
                 ))}
             </div>
