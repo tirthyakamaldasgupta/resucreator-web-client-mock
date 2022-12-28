@@ -43,7 +43,7 @@ export default function ResumeContainer(props: Props) {
             headers: { Authorization: `Bearer ${accessToken}` }
         };
 
-        const apiResponse = await axios.delete(`http://localhost:3000/600/resumes/${id}`, configuration)
+        const apiResponse = await axios.delete(`${process.env.NEXT_PUBLIC_BASE_API_ENDPOINT}/600/resumes/${id}`, configuration)
 
         if (apiResponse.status === 200) {
             Router.push("/resumes")
@@ -59,7 +59,7 @@ export default function ResumeContainer(props: Props) {
             headers: { Authorization: `Bearer ${accessToken}` }
         };
 
-        const apiResponse = await axios.get(`http://localhost:3000/600/resumes?id=${id}`, configuration)
+        const apiResponse = await axios.get(`${process.env.NEXT_PUBLIC_BASE_API_ENDPOINT}/600/resumes?id=${id}`, configuration)
 
         if (apiResponse.status === 200) {
             return apiResponse.data;
@@ -71,6 +71,8 @@ export default function ResumeContainer(props: Props) {
 
     const accessToken = getCookie("token");
     const userID = getCookie("userID");
+
+    const { BASE_API_ENDPOINT } = process.env;
 
     useEffect(() => {
         async function getResume() {

@@ -35,7 +35,7 @@ export default function NewResumeForm(props: Props) {
             userId: userID
         }
 
-        const apiResponse = await axios.post("http://localhost:3000/600/resumes", newResumeData, configuration)
+        const apiResponse = await axios.post(`${process.env.NEXT_PUBLIC_BASE_API_ENDPOINT}/600/resumes`, newResumeData, configuration)
 
         if (apiResponse.status === 201) {
             Router.push("/resumes")

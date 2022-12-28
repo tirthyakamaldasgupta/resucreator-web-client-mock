@@ -12,7 +12,7 @@ export default function Resumes() {
             headers: { Authorization: `Bearer ${accessToken}` }
         };
 
-        const apiResponse = await axios.get(`http://localhost:3000/resumes?userId=${userID}`, configuration)
+        const apiResponse = await axios.get(`${process.env.NEXT_PUBLIC_BASE_API_ENDPOINT}/resumes?userId=${userID}`, configuration)
 
         if (apiResponse.status === 200) {
             return apiResponse.data;

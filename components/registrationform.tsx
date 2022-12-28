@@ -29,7 +29,7 @@ export default function RegistrationForm() {
             isAuthenticated: false
         }
 
-        const apiResponse = await axios.post("http://localhost:3000/users", registrationData, configuration)
+        const apiResponse = await axios.post(`${process.env.NEXT_PUBLIC_BASE_API_ENDPOINT}/users`, registrationData, configuration)
 
         if (apiResponse.status === 201) {
             const accessToken = apiResponse.data.accessToken

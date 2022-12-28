@@ -14,7 +14,8 @@ export default function LoginForm() {
 
         const configuration = {
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin0": "'*'"
             }
         }
 
@@ -23,9 +24,7 @@ export default function LoginForm() {
             password: password
         }
 
-        const apiResponse = await axios.post("http://localhost:3000/login", loginData, configuration)
-
-        console.log(apiResponse)
+            const apiResponse = await axios.post(`${process.env.NEXT_PUBLIC_BASE_API_ENDPOINT}/login`, loginData, configuration)
 
         if (apiResponse.status === 200) {
             const accessToken = apiResponse.data.accessToken
