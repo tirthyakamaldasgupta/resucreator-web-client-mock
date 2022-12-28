@@ -57,18 +57,40 @@
   ],
   "resumes": [
     {
+      "resumeTitle": "Senior Automation Engineer",
+      "firstName": "Bob",
+      "middleName": "The",
+      "lastName": "Builder",
+      "profileSummary": "I have an experience in blah blah blah.",
       "userId": 4,
-      "data": {
-        "resumeTitle": "Senior Automation Engineer"
-      },
       "id": 1
     },
     {
-      "userId": 4,
-      "data": {
-        "resumeTitle": "Junior Automation Engineer"
-      },
+      "resumeTitle": "Senior DBA",
+      "firstName": "Bob",
+      "middleName": "The",
+      "lastName": "Builder",
+      "profileSummary": "Builder",
+      "userId": "4",
       "id": 2
+    },
+    {
+      "resumeTitle": "Senior Blockchain Specialist",
+      "firstName": "Bob",
+      "middleName": "The The",
+      "lastName": "Builder",
+      "profileSummary": "Builder",
+      "userId": "4",
+      "id": 3
+    },
+    {
+      "resumeTitle": "Senior Blockchain Developer",
+      "firstName": "Boob",
+      "middleName": "The",
+      "lastName": "Builder",
+      "profileSummary": "I am a certified Blockchain developer.",
+      "userId": "4",
+      "id": 4
     }
   ]
 }

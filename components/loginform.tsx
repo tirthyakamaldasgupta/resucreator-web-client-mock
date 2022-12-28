@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import {setCookie} from "cookies-next";
+import Router from "next/router";
 
 export default function LoginForm() {
     async function submitLoginForm(event: React.FormEvent<HTMLFormElement>) {
@@ -40,7 +41,7 @@ export default function LoginForm() {
                 sameSite: "strict"
             });
 
-            window.location.href = "/"
+            Router.push("/");
         }
     }
 
