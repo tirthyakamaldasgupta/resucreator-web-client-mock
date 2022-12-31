@@ -53,17 +53,44 @@
       "lastName": "Ronaldo",
       "isAuthenticated": false,
       "id": 8
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$bZ.9Zbmibp3Du0JCcaE3f.F9RhcWOfIvkSIXyMYPI/Pk20FiZOKHK",
+      "firstName": "Shuvo",
+      "middleName": "Savv",
+      "lastName": "Vhbb",
+      "isAuthenticated": false,
+      "id": 9
+    },
+    {
+      "email": "tubai.bhattaacharjee@gmail.com",
+      "password": "$2a$10$POGFQP./P1cuQ6YKY8mAeubc6eoEUHn.BatVwKsw3ajSDRfRuBtI.",
+      "firstName": "Tubai",
+      "middleName": "Hakaishin",
+      "lastName": "Bhattacharjee ",
+      "isAuthenticated": false,
+      "id": 10
     }
   ],
   "resumes": [
     {
-      "resumeTitle": "Experienced",
-      "firstName": "A",
-      "middleName": "B",
-      "lastName": "C",
-      "profileSummary": "Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla",
-      "userId": "4",
+      "resumeTitle": "Test title",
+      "firstName": "S",
+      "middleName": "",
+      "lastName": "Sarkar",
+      "profileSummary": "Lorem ipsum",
+      "userId": "9",
       "id": 1
+    },
+    {
+      "resumeTitle": "Curriculum vitae ",
+      "firstName": "Tubai",
+      "middleName": "Hakaishin ",
+      "lastName": "Bhattacharjee ",
+      "profileSummary": "I am a financial analyst, working in the investment banking division of MSR IT Pvt Ltd. ",
+      "userId": "10",
+      "id": 2
     }
   ]
 }
