@@ -51,7 +51,7 @@ export default function ResumeContainer(props: Props) {
     }
 
     async function editResume() {
-
+        Router.push(`/resume/${id}/edit`)
     }
 
     async function fetchResume(accessToken: string | undefined | null | boolean, userID: string | boolean | null | undefined) {
@@ -71,8 +71,6 @@ export default function ResumeContainer(props: Props) {
 
     const accessToken = getCookie("token");
     const userID = getCookie("userID");
-
-    const { BASE_API_ENDPOINT } = process.env;
 
     useEffect(() => {
         async function getResume() {
